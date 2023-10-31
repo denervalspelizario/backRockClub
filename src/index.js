@@ -15,4 +15,4 @@ app.use(cors());
 
 
 
-app.listen(3000, () => console.log(`Rodando a aplicação na porta 3000`));
+app.listen(process.env.PORT, () => console.log(`Rodando a aplicação na porta 3000`));
