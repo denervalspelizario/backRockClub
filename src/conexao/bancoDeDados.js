@@ -1,6 +1,6 @@
 const { Pool } = require('pg');
 
-const conexaoComBanco = new Pool({
+const conexaoComOBanco = new Pool({
   user: process.env.DB_USER,
   host: process.env.DB_HOST,
   database: process.env.DB_DATABASE,
@@ -8,6 +8,4 @@ const conexaoComBanco = new Pool({
   port: process.env.DB_PORT,
 });
 
-
-module.exports = conexaoComBanco;
-
+module.exports = conexaoComOBanco;
